@@ -1,6 +1,5 @@
 import './App.css';
 import Header from "./components/header/Header";
-import {Route, Routes} from "react-router-dom";
 import Home from "./page/Home";
 import AllBooks from "./page/AllBooks";
 import ProductDetail from "./page/ProductDetail";
@@ -15,17 +14,15 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <Routes>
-                <Route path={"/"} element={<Home/>}/>
-                <Route path={"/books"} element={<AllBooks/>}/>
-                <Route path={"/productDetail"} element={<ProductDetail/>}/>
-                <Route path={"/myCart"} element={<MyCart/>}/>
-            </Routes>
-          <MainPage/>
-          <Books/>
-          <BooksAll/>
-          <About/>
-          <Footer/>
+            <Home/>
+            <AllBooks/>
+            <ProductDetail/>
+            <MyCart/>
+            <MainPage/>
+            <Books/>
+            <BooksAll/>
+            <About/>
+            <Footer/>
         </div>
     );
 }
