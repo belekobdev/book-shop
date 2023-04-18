@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from "./components/header/Header";
+import {Route, Routes} from "react-router-dom";
+import Home from "./page/Home";
+import AllBooks from "./page/AllBooks";
+import ProductDetail from "./page/ProductDetail";
+import MyCart from "./page/MyCart";
+import MainPage from "./components/main-page/MainPage";
+import Books from "./components/books/Books";
+import BooksAll from "./components/book-all/BooksAll";
+import About from "./components/about/About";
+import Footer from "./components/footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Routes>
+                <Route path={"/"} element={<Home/>}/>
+                <Route path={"/books"} element={<AllBooks/>}/>
+                <Route path={"/productDetail"} element={<ProductDetail/>}/>
+                <Route path={"/myCart"} element={<MyCart/>}/>
+            </Routes>
+          <MainPage/>
+          <Books/>
+          <BooksAll/>
+          <About/>
+          <Footer/>
+        </div>
+    );
 }
 
 export default App;
