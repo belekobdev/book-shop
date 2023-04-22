@@ -7,9 +7,9 @@ import ProductDetail from "./page/ProductDetail";
 import MyCart from "./page/MyCart";
 import MainPage from "./components/main-page/MainPage";
 import Books from "./components/books/Books";
-import BooksAll from "./components/book-all/BooksAll";
 import About from "./components/about/About";
-import Footer from "./components/footer/Footer";
+import OurBook from "./ourBook/ourBook";
+
 
 function App() {
     return (
@@ -17,15 +17,13 @@ function App() {
             <Header/>
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
-                <Route path={"/books"} element={<AllBooks/>}/>
-                <Route path={"/productDetail"} element={<ProductDetail/>}/>
-                <Route path={"/myCart"} element={<MyCart/>}/>
+                {/*<Route path={"/b ooks"} element={<Books/> }/>*/}
+                {/*<Route path={"/books"} element={<OurBook/>}/>*/}
+                {/*<Route path={"/productDetail"} element={<ProductDetail/>}/>*/}
+                {/*<Route path={"/myCart"} element={<MyCart/>}/>*/}
+                {/*<Route path={"/about"} element={<About/>}/>*/}
+                {/*<Route path={"/allBooks"} element={<AllBooks/>}/>*/}
             </Routes>
-          <MainPage/>
-          <Books/>
-          <BooksAll/>
-          <About/>
-          <Footer/>
         </div>
     );
 }
