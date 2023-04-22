@@ -1,6 +1,5 @@
 import './App.css';
 import Header from "./components/header/Header";
-import {Route, Routes} from "react-router-dom";
 import Home from "./page/Home";
 import AllBooks from "./page/AllBooks";
 import ProductDetail from "./page/ProductDetail";
@@ -17,13 +16,16 @@ function App() {
             <Header/>
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
-                {/*<Route path={"/b ooks"} element={<Books/> }/>*/}
-                {/*<Route path={"/books"} element={<OurBook/>}/>*/}
-                {/*<Route path={"/productDetail"} element={<ProductDetail/>}/>*/}
-                {/*<Route path={"/myCart"} element={<MyCart/>}/>*/}
-                {/*<Route path={"/about"} element={<About/>}/>*/}
-                {/*<Route path={"/allBooks"} element={<AllBooks/>}/>*/}
             </Routes>
+            <Home/>
+            <AllBooks/>
+            <ProductDetail/>
+            <MyCart/>
+            <MainPage/>
+            <Books/>
+            <BooksAll/>
+            <About/>
+            <Footer/>
         </div>
     );
 }
