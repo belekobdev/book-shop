@@ -48,7 +48,7 @@ const Books = () => {
     return (
         <>
             <div className="containers mt-20">
-                <div className="flex justify-around items-center mt-32 font-bold">
+                <div className="flex justify-between items-center mt-32 font-bold">
                     <h1 className="text-4xl text-gray-600">Books</h1>
                     <NavLink to={"/books"} className="text-blue-500 mt-4">View all</NavLink>
                 </div>

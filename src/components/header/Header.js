@@ -5,9 +5,9 @@ import {BsBagHeartFill} from "react-icons/bs";
 
 const Header = () => {
     return (
-       <div className="border">
+       <div className="header border">
            <div className="containers flex justify-between py-4">
-               <nav className="flex font-bold">
+               <nav className="flex font-bold text-gray-600">
                    <NavLink to={"/"} className="text-blue-400 font-bold hover:text-blue-800">Bookshop</NavLink>
                    <NavLink to={"/productDetail"} className="mx-6">Categories</NavLink>
                    <NavLink to={"/myCart"}>Resent</NavLink>
@@ -18,7 +18,6 @@ const Header = () => {
                    <FaSearch/>
                    <BsBagHeartFill className="mx-6"/>
                </div>
-
            </div>
        </div>
     );

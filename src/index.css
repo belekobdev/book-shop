@@ -12,3 +12,9 @@
     width: 900px;
     color: black;
 }
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
